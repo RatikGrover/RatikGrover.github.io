@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a:link {
+          color: green;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:visited {
+          color: pink;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:hover {
+          color: red;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        
+        a:active {
+          color: yellow;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+    <title>Gallery - GGSIPU</title>
+</head>
+
+<body>
+    <header>
+        <h1>GGSIPU University</h1>
+        <nav>
+            <a href="index.html">Home </a>|
+            <a href="academics.html">Academics </a>|
+            <a href="admission.html">Admission </a>|
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <section id="gallery">
+        <h2>Photo Gallery</h2>
+
+        <div class="gallery">
+        
+            <div>
+                <img src="1.jpg" alt="Gallery Image 1">
+                <p class="caption">VIPS CAMPUS</p>
+            </div>
+            <div>
+                <img src="2.jpeg" alt="Gallery Image 2">
+                <p class="caption">OUTSIDE VIEW</p>
+            </div>
+            <div>
+                <img src="3.png" alt="Gallery Image 3">
+                <p class="caption">INSIDE VIEW</p>
+            </div>
+            
+        </div>
+    </section>
+
+</body>
+
+</html>
